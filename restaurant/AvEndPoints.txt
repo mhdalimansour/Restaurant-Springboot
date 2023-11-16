@@ -1,0 +1,15 @@
+GET /customers : get all customers
+GET /customers/{customerId} : get customer
+GET /customers/{customerId}/orders : get customer's orders
+GET /customers/{customerId}/reviews : get customer's reviews
+GET /customers/{customerId}/cart : get customer's cart
+
+GET /owners : get all owner
+GET /owners/{ownerId} : get owner of id
+GET /owners/{ownerId}/restaurantsOwned : get restuarant of owner
+
+GET /restaurants : get all restaurants
+GET /restaurant/{restuarantId} : get restaurant
+GET /restaurant/{restuarantId}/menuItems : get restaurant menu
+GET /restaurant/{restuarantId}/reviews : get restaurant reviews
+GET /restaurant/{restuarantId}/owner : get restaurant owner

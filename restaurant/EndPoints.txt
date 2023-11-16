@@ -1,0 +1,53 @@
+Restaurant:
+  get:
+    - /restaurants : show all restaurants
+    - /restaurants/{name} : show restaurant (slug) + menu
+    
+  post:
+    - /restaurants/new : create new restaurant (O)
+
+  (put, delete)
+
+User:
+  - Role: (customer / owner / admin)
+  get:
+    - /users : show all users (A)
+    - /users/{id} : show user ID = {id}
+
+  post:
+    - /users : create new User
+
+  LogIn,SignUp
+
+  (put, delete)
+
+
+Order:
+  get:
+    - /orders : show all orders (A , O)
+    - /orders/{id} : show order ID = {id} (A , O)
+
+  post:
+    - /orders : create new order
+  
+  (put,delete)
+
+Cart:
+  get:
+    - /cart : show cart
+  
+  put:
+    - /cart/{menu_item_id} : add/remove item to cart
+
+
+OrderItem:
+  get:
+
+Reviews:
+  get:
+    - /reviews/{restaurantName} : show reviews of a restaurant
+
+  post:
+    - /reviews/{restaurantName} : add a review on a certain restaurant
+
+
